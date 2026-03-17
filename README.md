@@ -1,40 +1,67 @@
 # ghostty-claude-shadcn
 
-Ghostty terminal theme based on Claude's official shadcn UI color palette.
+A Ghostty terminal theme based on [Claude's](https://claude.ai) official [shadcn UI](https://ui.shadcn.com) color palette.
 
-## Overview
-
-A Ghostty terminal theme that brings Claude's beautiful shadcn UI colors to your terminal. Features automatic light/dark mode support.
-
-## Installation
-
-1. Copy both theme files to your Ghostty themes directory:
-   ```bash
-   mkdir -p ~/.config/ghostty/themes
-   cp claude-shadcn-* ~/.config/ghostty/themes/
-   ```
-
-2. Add to your Ghostty config (`~/.config/ghostty/config`):
-   ```bash
-   theme = light:claude-shadcn-light,dark:claude-shadcn-dark
-   ```
-
-3. Restart Ghostty to apply the theme.
+![Dark Theme](screenshots/dark.png)
+![Light Theme](screenshots/light.png)
 
 ## Color Palette
 
-### Dark Theme
-- Background: `#3A3A3A`
-- Foreground: `#D4CFC4`
-- Cursor: `#E67E22`
-- Selection: `#2C3E50`
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Orange | `#E67E22` | Cursor, primary accent |
+| Teal | `#1B9AAA` | Links, cyan |
+| Sage Green | `#88AB8E` | Success, green |
+| Yellow | `#E5B945` | Warnings, yellow |
+| Purple | `#B57EDC` | Magenta, purple |
+| Navy | `#2C3E50` | Selection (dark mode) |
+| Cream | `#F7F4EA` | Light background |
+| Dark Gray | `#3A3A3A` | Dark background |
 
-### Light Theme
-- Background: `#FAFAFA`
-- Foreground: `#4A4A4A`
-- Cursor: `#E67E22`
-- Selection: `#E67E22`
+## Installation
+
+### Option 1: Copy to Themes Directory
+
+```bash
+# macOS
+cp claude-shadcn-dark claude-shadcn-light \
+  ~/Library/Application\ Support/com.mitchellh.ghostty/themes/
+
+# Linux
+cp claude-shadcn-dark claude-shadcn-light \
+  ~/.config/ghostty/themes/
+```
+
+### Option 2: Clone and Symlink
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ghostty-claude-shadcn.git
+
+# macOS
+ln -s $(pwd)/ghostty-claude-shadcn/claude-shadcn-dark \
+  ~/Library/Application\ Support/com.mitchellh.ghostty/themes/
+ln -s $(pwd)/ghostty-claude-shadcn/claude-shadcn-light \
+  ~/Library/Application\ Support/com.mitchellh.ghostty/themes/
+```
+
+## Usage
+
+Add to your Ghostty config (`~/.config/ghostty/config` or macOS equivalent):
+
+```
+# Use dark theme
+theme = claude-shadcn-dark
+
+# Or light theme
+theme = claude-shadcn-light
+```
+
+### Auto-Switch with System Appearance (macOS)
+
+```
+theme = light:claude-shadcn-light,dark:claude-shadcn-dark
+```
 
 ## License
 
-MIT
+MIT License
