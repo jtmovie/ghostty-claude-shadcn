@@ -35,13 +35,13 @@ ghostty-claude-shadcn/
 Based on Claude's official shadcn UI design system, optimized for terminal readability.
 
 ### Dark Theme
-- Background: `#3A3A3A`
+- Background: `#83827d`
 - Foreground: `#D4CFC4`
 - Cursor: `#E67E22`
 - Selection: `#2C3E50`
 
 ### Light Theme
-- Background: `#FAFAFA`
+- Background: `#e9e6dc`
 - Foreground: `#4A4A4A`
 - Cursor: `#E67E22`
 - Selection: `#E67E22`

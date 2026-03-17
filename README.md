@@ -16,7 +16,19 @@ A Ghostty terminal theme based on [Claude's](https://claude.ai) official [shadcn
 | Purple | `#B57EDC` | Magenta, purple |
 | Navy | `#2C3E50` | Selection (dark mode) |
 | Cream | `#F7F4EA` | Light background |
-| Dark Gray | `#3A3A3A` | Dark background |
+| Dark Gray | `#83827d` | Dark background |
+
+### Dark Theme
+- Background: `#83827d`
+- Foreground: `#D4CFC4`
+- Cursor: `#E67E22`
+- Selection: `#2C3E50`
+
+### Light Theme
+- Background: `#e9e6dc`
+- Foreground: `#4A4A4A`
+- Cursor: `#E67E22`
+- Selection: `#E67E22`
 
 ## Installation
 
@@ -35,7 +47,7 @@ cp claude-shadcn-dark claude-shadcn-light \
 ### Option 2: Clone and Symlink
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ghostty-claude-shadcn.git
+git clone https://github.com/jtmovie/ghostty-claude-shadcn.git
 
 # macOS
 ln -s $(pwd)/ghostty-claude-shadcn/claude-shadcn-dark \

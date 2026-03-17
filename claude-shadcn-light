@@ -20,7 +20,7 @@ palette = 14=#5FBDBD
 palette = 15=#2C3E50
 
 # Core colors
-background = #FAFAFA
+background = #e9e6dc
 foreground = #4A4A4A
 cursor-color = #E67E22
 cursor-text = #FAFAFA
